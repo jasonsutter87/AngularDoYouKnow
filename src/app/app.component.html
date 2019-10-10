@@ -19,16 +19,17 @@
 <p>-----------------------------------------</p>
 <br>
 
-
-<div *ngFor="let item of appitems">
+<div>
   <small>This is an example of iteration over an array from the same directory as the component</small><br>
-  <div>
-    <p>{{ item.item }}</p>
-    <p>{{ item.cost }}</p>
-  </div>
-  <div>
-    <p>
-      *****
-    </p>
+  <div *ngFor="let item of appitems">
+    <div>
+      <p>{{ item.item }}</p>
+      <p>{{ item.cost }}</p>
+    </div>
+    <div>
+      <p>
+        *****
+      </p>
+    </div>
   </div>
 </div>
