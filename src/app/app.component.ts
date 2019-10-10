@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-
+import { appitems } from './appItems';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +7,8 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  appitems = appitems;
   pageTitle = 'AngularDoYouKnow';
+
   @Input() updateText: string = '';
 }
